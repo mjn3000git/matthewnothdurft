@@ -137,7 +137,7 @@ ABOUT = f"""
   <div>{PORTRAIT}</div>
   <div class="about-copy">
     <p class="lede">I'm Matthew Nothdurft, a licensed real estate broker and the founder of MJN Realty, based in the Adirondack region of New York.</p>
-    <p class="bio">I was born and raised in the Adirondacks and have called this place home my whole life, so I know the area and its towns inside and out.</p>
+    <p class="bio">I grew up on the shores of Schroon Lake, kindergarten through twelfth grade, with the mountains for a backyard and the lake for a playground. College took me just down the road to Queensbury, and work carried me farther, to other towns and other lives. But this lake has a way of calling you home. Now I&rsquo;m back, swimming and boating the same clear water and still finding something new around every bend.</p>
     <h2 class="h3">At a glance</h2>
     <ul class="facts">
       <li><span>Work</span>Licensed real estate broker, founder of MJN Realty</li>
