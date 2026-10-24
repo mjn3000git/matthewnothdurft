@@ -27,7 +27,7 @@ def page(fname, title, desc, body):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 <header class="site-header">
@@ -56,7 +56,7 @@ def page(fname, title, desc, body):
 </html>
 """
 
-PORTRAIT = """<img class="portrait-photo" src="img/matthew-nothdurft.jpg" alt="Matthew Nothdurft" width="651" height="813">"""
+PORTRAIT = """<img class="portrait-photo" src="img/matthew-nothdurft.jpg?v=2" alt="Matthew Nothdurft" width="671" height="894">"""
 
 HOME = f"""
 <section class="hero">

@@ -46,11 +46,11 @@ p{margin:0 0 1em}
 
 .placeholder{position:relative;border:1.5px dashed var(--brass);background:repeating-linear-gradient(135deg,#f1ebe0 0 14px,#ece5d8 14px 28px);border-radius:var(--r)}
 .ph-tag{position:absolute;top:12px;left:12px;background:var(--bronze);color:#f5efe4;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 9px;border-radius:2px}
-.portrait{aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;box-shadow:18px 18px 0 -1px var(--paper-2),18px 18px 0 0 var(--line)}
+.portrait{aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;box-shadow:18px 18px 0 -1px var(--paper-2),18px 18px 0 0 var(--line)}
 .ph-icon{width:96px;height:96px;border-radius:50%;border:1.5px solid var(--brass);position:relative}
 .ph-icon::after{content:"";position:absolute;left:50%;top:50%;width:34px;height:34px;transform:translate(-50%,-62%);border-radius:50%;background:#d8ccb7}
 .ph-text{font-size:14px;color:var(--bronze);letter-spacing:.02em}
-.portrait-photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:18px 18px 0 -1px var(--paper-2),18px 18px 0 0 var(--line)}
+.portrait-photo{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:var(--r);box-shadow:18px 18px 0 -1px var(--paper-2),18px 18px 0 0 var(--line)}
 .about-copy .bio{color:var(--ink-soft);margin:24px 0 36px}
 .ph-block{padding:52px 28px 24px;margin:28px 0 36px}
 .ph-block p{color:var(--bronze)}
@@ -134,6 +134,7 @@ p{margin:0 0 1em}
   .pillar,.pillar+.pillar{padding:24px 0 6px;border-left:0}
   .pillar+.pillar{border-top:1px solid var(--line)}
   .section{padding:64px 20px 24px}.page-head{padding:52px 20px 28px}
+  .hero-photo,.about-grid>div:first-child{max-width:300px}
   .portrait-photo{box-shadow:10px 10px 0 -1px var(--paper-2),10px 10px 0 0 var(--line)}
   .portrait{box-shadow:10px 10px 0 -1px var(--paper-2),10px 10px 0 0 var(--line)}
   .facts li{grid-template-columns:1fr;gap:2px}
