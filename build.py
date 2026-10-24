@@ -20,7 +20,6 @@ def page(fname, title, desc, body):
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
@@ -31,7 +30,6 @@ def page(fname, title, desc, body):
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="preview-banner">Preview / mock-up only, not the live site</div>
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="index.html"><span class="mono">MN</span><span class="name">Matthew Nothdurft</span></a>
@@ -52,7 +50,7 @@ def page(fname, title, desc, body):
       <ul>{sites}</ul>
     </div>
   </div>
-  <div class="wrap foot-base"><span>matthewnothdurft.com preview</span></div>
+  <div class="wrap foot-base"><span>matthewnothdurft.com</span></div>
 </footer>
 </body>
 </html>
