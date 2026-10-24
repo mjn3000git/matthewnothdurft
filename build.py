@@ -58,11 +58,7 @@ def page(fname, title, desc, body):
 </html>
 """
 
-PORTRAIT = """<div class="portrait placeholder" role="img" aria-label="Placeholder for a portrait photo of Matthew">
-  <span class="ph-tag">Placeholder</span>
-  <span class="ph-icon" aria-hidden="true"></span>
-  <span class="ph-text">Your portrait photo goes here</span>
-</div>"""
+PORTRAIT = """<img class="portrait-photo" src="img/matthew-nothdurft.jpg" alt="Matthew Nothdurft" width="651" height="813">"""
 
 HOME = f"""
 <section class="hero">
@@ -71,7 +67,7 @@ HOME = f"""
       <p class="eyebrow">Lake George &middot; Schroon Lake &middot; the Adirondacks</p>
       <h1>Matthew Nothdurft</h1>
       <p class="lede">Licensed real estate broker and founder of MJN Realty, working in the Adirondack region of New York.</p>
-      <p>I focus on seasonal and rental properties and property management around Lake George and Schroon Lake. Away from real estate, I fly DJI drones and build things in wood through Adirondack Craftworks.</p>
+      <p>I focus on seasonal and rental properties and property management around Lake George and Schroon Lake. Away from real estate, I fly DJI drones and make handmade pieces in wood, metal, and other materials through Adirondack Craftworks.</p>
       <div class="actions">
         <a class="btn" href="ventures.html">See what I'm working on</a>
         <a class="btn ghost" href="contact.html">Get in touch</a>
@@ -103,8 +99,8 @@ HOME = f"""
     </div>
     <div class="pillar">
       <span class="num">03</span>
-      <h3>Woodworking</h3>
-      <p>Handmade work through Adirondack Craftworks.</p>
+      <h3>Craftwork</h3>
+      <p>Handmade pieces in wood, metal, and other materials through Adirondack Craftworks.</p>
     </div>
   </div>
 </section>
@@ -128,7 +124,7 @@ HOME = f"""
     </a>
     <a class="card" href="https://adirondackcraftworks.com" rel="noopener">
       <div class="card-logo"><img src="img/acw-logo.png" alt="Adirondack Craftworks logo" loading="lazy"></div>
-      <div class="card-body"><h3>Adirondack Craftworks</h3><p>Woodworking, made in the Adirondacks.</p><span class="go">adirondackcraftworks.com &rarr;</span></div>
+      <div class="card-body"><h3>Adirondack Craftworks</h3><p>Handmade pieces in wood, metal, and other materials.</p><span class="go">adirondackcraftworks.com &rarr;</span></div>
     </a>
   </div>
 </section>
@@ -143,17 +139,14 @@ ABOUT = f"""
   <div>{PORTRAIT}</div>
   <div class="about-copy">
     <p class="lede">I'm Matthew Nothdurft, a licensed real estate broker and the founder of MJN Realty, based in the Adirondack region of New York.</p>
-    <div class="placeholder ph-block">
-      <span class="ph-tag">Placeholder</span>
-      <p><strong>Your bio, in your own words.</strong> A few sentences on who you are, how you got into real estate, and what you love about the Lake George and Schroon Lake area. I'll drop your text in exactly as you write it.</p>
-    </div>
+    <p class="bio">I was born and raised in the Adirondacks and have called this place home my whole life, so I know the area and its towns inside and out.</p>
     <h2 class="h3">At a glance</h2>
     <ul class="facts">
       <li><span>Work</span>Licensed real estate broker, founder of MJN Realty</li>
       <li><span>Focus</span>Seasonal and rental properties, property management</li>
       <li><span>Area</span>Lake George and Schroon Lake, Adirondack region of New York</li>
       <li><span>In the air</span>DJI drones, 4K photo and video</li>
-      <li><span>In the shop</span>Woodworking through Adirondack Craftworks</li>
+      <li><span>In the shop</span>Handmade pieces in wood, metal, and other materials through Adirondack Craftworks</li>
     </ul>
   </div>
 </section>
@@ -166,7 +159,7 @@ VENTURES = """
 <section class="wrap page-head">
   <p class="eyebrow">Ventures</p>
   <h1>What I'm working on</h1>
-  <p class="lede narrow">Real estate, a seasonal home, woodworking, and aerial photography, all rooted in the Adirondacks.</p>
+  <p class="lede narrow">Real estate, a seasonal home, craftwork, and aerial photography, all rooted in the Adirondacks.</p>
 </section>
 <section class="wrap ventures">
   <article class="venture">
@@ -190,9 +183,9 @@ VENTURES = """
   <article class="venture">
     <div class="logo-art"><img src="img/acw-logo.png" alt="Adirondack Craftworks logo" loading="lazy"></div>
     <div class="v-body">
-      <p class="eyebrow">Woodworking</p>
+      <p class="eyebrow">Craftwork</p>
       <h2>Adirondack Craftworks</h2>
-      <p>My woodworking shop.</p>
+      <p>Handmade pieces from Adirondack Craftworks, in wood, metal, and whatever else the piece calls for.</p>
       <a class="btn" href="https://adirondackcraftworks.com" rel="noopener">Visit adirondackcraftworks.com</a>
     </div>
   </article>
