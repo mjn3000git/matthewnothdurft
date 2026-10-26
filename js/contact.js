@@ -1,7 +1,7 @@
 // matthewnothdurft.com contact form (Formspree, free plan), same setup as Adirondack Craftworks js/inquiry.js.
 // To turn the form on, paste the Formspree form ID (the part after formspree.io/f/) between the quotes below.
 // While it is empty, the form still shows, but nothing is posted; Send shows a short note instead.
-const FORMSPREE_ID = "";
+const FORMSPREE_ID = "xaeeebnq";
 
 (function () {
   var form = document.getElementById("contact-form");

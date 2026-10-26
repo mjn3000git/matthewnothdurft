@@ -4,7 +4,7 @@ from pathlib import Path
 
 NAV = [("index.html", "Home"), ("about.html", "About"), ("ventures.html", "Ventures"), ("contact.html", "Contact")]
 
-# (url, name, domain, logo). MJN Realty logo is mock-up option 1 (preview only, not approved).
+# (url, name, domain, logo). MJN Realty logo is option 3 (wordmark under mountain peaks), picked by Matthew.
 FOOTER_SITES = [
     ("https://mjnrealty.com", "MJN Realty", "mjnrealty.com", "img/logos/mjnrealty.svg"),
     ("https://41hayes.com", "The Hayes House", "41hayes.com", "img/logos/41hayes.svg"),
@@ -30,7 +30,7 @@ def page(fname, title, desc, body):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 <header class="site-header">
