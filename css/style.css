@@ -173,3 +173,4 @@ p{margin:0 0 1em}
 .form-note{margin:0;padding:12px 14px;background:var(--paper-2);border-left:3px solid var(--brass);color:var(--bronze);font-size:15px}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 @media (max-width:640px){.f-row{grid-template-columns:1fr}}
+@media (max-width:640px){.foot{padding-top:48px;padding-bottom:36px}}
