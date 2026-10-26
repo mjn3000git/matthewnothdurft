@@ -4,10 +4,12 @@ from pathlib import Path
 
 NAV = [("index.html", "Home"), ("about.html", "About"), ("ventures.html", "Ventures"), ("contact.html", "Contact")]
 
+# (url, name, domain, logo). MJN Realty logo is mock-up option 1 (preview only, not approved).
 FOOTER_SITES = [
-    ("https://mjnrealty.com", "MJN Realty", "mjnrealty.com"),
-    ("https://41hayes.com", "The Hayes House", "41hayes.com"),
-    ("https://adirondackcraftworks.com", "Adirondack Craftworks", "adirondackcraftworks.com"),
+    ("https://mjnrealty.com", "MJN Realty", "mjnrealty.com", "img/logos/mjnrealty.svg"),
+    ("https://41hayes.com", "The Hayes House", "41hayes.com", "img/logos/41hayes.svg"),
+    ("https://adirondackcraftworks.com", "Adirondack Craftworks", "adirondackcraftworks.com", "img/logos/adirondackcraftworks.png"),
+    ("https://droneestates.com", "Drone Estates", "droneestates.com", "img/logos/droneestates.svg"),
 ]
 
 def page(fname, title, desc, body):
@@ -15,7 +17,7 @@ def page(fname, title, desc, body):
         f'<a href="{h}"{" class=\"on\" aria-current=\"page\"" if h == fname else ""}>{t}</a>' for h, t in NAV
     )
     sites = "".join(
-        f'<li><a href="{u}" rel="noopener">{n}<span>{d}</span></a></li>' for u, n, d in FOOTER_SITES
+        f'<li><a href="{u}" rel="noopener"><img class="site-logo" src="{l}" alt="" width="40" height="40"><span class="site-text">{n}<span>{d}</span></span></a></li>' for u, n, d, l in FOOTER_SITES
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -27,7 +29,7 @@ def page(fname, title, desc, body):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 <header class="site-header">
@@ -124,6 +126,10 @@ HOME = f"""
       <div class="card-logo"><img src="img/acw-logo.png" alt="Adirondack Craftworks logo" loading="lazy"></div>
       <div class="card-body"><h3>Adirondack Craftworks</h3><p>Handmade pieces in wood, metal, and other materials.</p><span class="go">adirondackcraftworks.com &rarr;</span></div>
     </a>
+    <a class="card" href="https://droneestates.com" rel="noopener">
+      <img src="img/drone-valley.jpg" alt="Aerial view over wooded Adirondack hills" loading="lazy">
+      <div class="card-body"><h3>Drone Estates</h3><p>Drone photos and aerial views, 4K photo and video.</p><span class="go">droneestates.com &rarr;</span></div>
+    </a>
   </div>
 </section>
 """
@@ -187,13 +193,13 @@ VENTURES = """
       <a class="btn" href="https://adirondackcraftworks.com" rel="noopener">Visit adirondackcraftworks.com</a>
     </div>
   </article>
-  <article class="venture flip soon">
-    <div class="soon-art" aria-hidden="true"><span class="cross"></span><span class="rec">Coming soon</span></div>
+  <article class="venture flip">
+    <img src="img/drone-valley.jpg" alt="Aerial view over wooded Adirondack hills" loading="lazy">
     <div class="v-body">
       <p class="eyebrow">Aerial photography</p>
       <h2>Drone Estates</h2>
-      <p>Drone and aerial photography, flown on DJI drones in 4K photo and video. The site is on the way.</p>
-      <span class="badge">Coming soon</span>
+      <p>Drone photos and aerial views for homeowners, events, and real estate, flown on DJI drones in 4K photo and video.</p>
+      <a class="btn" href="https://droneestates.com" rel="noopener">Visit droneestates.com</a>
     </div>
   </article>
 </section>
@@ -206,12 +212,10 @@ CONTACT = """
   <p class="lede narrow">For real estate questions, seasonal rentals, or anything else.</p>
 </section>
 <section class="wrap contact-grid">
-  <div class="placeholder ph-block">
-    <span class="ph-tag">Placeholder</span>
-    <p><strong>Contact details go here.</strong> Tell me which email address and phone number (if any) you want shown, and whether you'd like a contact form.</p>
+  <div class="contact-details">
     <ul class="facts">
-      <li><span>Email</span>to be added</li>
-      <li><span>Phone</span>to be added</li>
+      <li><span>Phone</span><a href="tel:+15188329174">518-832-9174</a></li>
+      <li><span>Email</span></li>
       <li><span>Area</span>Adirondack region of New York</li>
     </ul>
   </div>
