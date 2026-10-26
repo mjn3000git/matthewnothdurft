@@ -145,7 +145,10 @@ p{margin:0 0 1em}
 .foot-sites ul{grid-template-columns:repeat(2,1fr);gap:18px 28px}
 .foot-sites a{display:flex;align-items:center;gap:14px}
 .foot-sites .site-logo{width:40px;height:40px;flex:none;object-fit:contain}
-.foot-sites .site-text{display:block}
+.foot-sites a .site-text{display:block;font-family:var(--serif);font-size:20px;color:#fff;margin-top:0;line-height:1.3}
+.foot-sites a .site-text span{display:block;font-family:var(--sans);font-size:13px;color:#b9c0c8;margin-top:2px}
+.foot-sites a:hover .site-text{color:#fff}
+.foot-sites a:hover .site-text span{color:#c9b38c}
 
 /* home cards: four ventures */
 .cards{grid-template-columns:repeat(4,1fr);gap:22px}
