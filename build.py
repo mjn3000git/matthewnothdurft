@@ -13,6 +13,7 @@ FOOTER_SITES = [
 ]
 
 def page(fname, title, desc, body):
+    script = '<script src="js/contact.js" defer></script>\n' if fname == "contact.html" else ""
     nav = "".join(
         f'<a href="{h}"{" class=\"on\" aria-current=\"page\"" if h == fname else ""}>{t}</a>' for h, t in NAV
     )
@@ -54,7 +55,7 @@ def page(fname, title, desc, body):
   </div>
   <div class="wrap foot-base"><span>matthewnothdurft.com</span></div>
 </footer>
-</body>
+{script}</body>
 </html>
 """
 
@@ -213,9 +214,20 @@ CONTACT = """
 </section>
 <section class="wrap contact-grid">
   <div class="contact-details">
+    <p class="form-intro">Have a project or question? Send a note and I'll get back to you within a day or two.</p>
+    <form id="contact-form" class="contact-form" accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="matthewnothdurft.com contact form">
+      <div class="hp" aria-hidden="true"><label for="f-gotcha">Leave this field empty</label><input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+      <div class="f-row">
+        <div class="f-field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+        <div class="f-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="f-field"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="5"></textarea></div>
+      <button class="btn" type="submit">Send</button>
+      <p id="contact-form-note" class="form-note" role="status" hidden></p>
+    </form>
     <ul class="facts">
       <li><span>Phone</span><a href="tel:+15188329174">518-832-9174</a></li>
-      <li><span>Email</span></li>
       <li><span>Area</span>Adirondack region of New York</li>
     </ul>
   </div>
