@@ -4,9 +4,9 @@ from pathlib import Path
 
 NAV = [("index.html", "Home"), ("about.html", "About"), ("ventures.html", "Ventures"), ("contact.html", "Contact")]
 
-# (url, name, domain, logo). MJN Realty logo is option 3 (wordmark under mountain peaks), picked by Matthew.
+# (url, name, domain, logo). mjnrealty.com logo is option 3 (wordmark under mountain peaks), picked by Matthew.
 FOOTER_SITES = [
-    ("https://mjnrealty.com", "MJN Realty", "mjnrealty.com", "img/logos/mjnrealty.svg"),
+    ("https://mjnrealty.com", "Real Estate Broker", "mjnrealty.com", "img/logos/mjnrealty.svg"),
     ("https://41hayes.com", "The Hayes House", "41hayes.com", "img/logos/41hayes.svg"),
     ("https://adirondackcraftworks.com", "Adirondack Craftworks", "adirondackcraftworks.com", "img/logos/adirondackcraftworks.png"),
     ("https://droneestates.com", "Drone Estates", "droneestates.com", "img/logos/droneestates.svg"),
@@ -67,7 +67,7 @@ HOME = f"""
     <div class="hero-copy">
       <p class="eyebrow">Lake George &middot; Schroon Lake &middot; the Adirondacks</p>
       <h1>Matthew Nothdurft</h1>
-      <p class="lede">Licensed real estate broker and founder of MJN Realty, working in the Adirondack region of New York.</p>
+      <p class="lede">Matthew J. Nothdurft, Licensed Real Estate Broker, working in the Adirondack region of New York.</p>
       <p>I focus on seasonal and rental properties and property management around Lake George and Schroon Lake. Away from real estate, I fly DJI drones and make handmade pieces in wood, metal, and other materials through Adirondack Craftworks.</p>
       <div class="actions">
         <a class="btn" href="ventures.html">See what I'm working on</a>
@@ -91,7 +91,7 @@ HOME = f"""
     <div class="pillar">
       <span class="num">01</span>
       <h3>Real estate</h3>
-      <p>Seasonal and rental properties and property management through MJN Realty.</p>
+      <p>Seasonal and rental properties and property management.</p>
     </div>
     <div class="pillar">
       <span class="num">02</span>
@@ -117,7 +117,7 @@ HOME = f"""
   <div class="cards">
     <a class="card" href="https://mjnrealty.com" rel="noopener">
       <img src="img/fall-road.jpg" alt="Fall foliage over a country road" loading="lazy">
-      <div class="card-body"><h3>MJN Realty</h3><p>Seasonal and rental properties and property management.</p><span class="go">mjnrealty.com &rarr;</span></div>
+      <div class="card-body"><h3>mjnrealty.com</h3><p>Seasonal and rental properties and property management.</p><span class="go">mjnrealty.com &rarr;</span></div>
     </a>
     <a class="card" href="https://41hayes.com" rel="noopener">
       <img src="img/lake-path.jpg" alt="Wooded path in the Adirondacks" loading="lazy">
@@ -143,11 +143,11 @@ ABOUT = f"""
 <section class="wrap about-grid">
   <div>{PORTRAIT}</div>
   <div class="about-copy">
-    <p class="lede">I'm Matthew Nothdurft, a licensed real estate broker and the founder of MJN Realty, based in the Adirondack region of New York.</p>
+    <p class="lede">I'm Matthew J. Nothdurft, Licensed Real Estate Broker, based in the Adirondack region of New York.</p>
     <p class="bio">I grew up on the shores of Schroon Lake, kindergarten through twelfth grade, with the mountains for a backyard and the lake for a playground. College took me just down the road to Queensbury, and work carried me farther, to other towns and other lives. But this lake has a way of calling you home. Now I&rsquo;m back, swimming and boating the same clear water and still finding something new around every bend.</p>
     <h2 class="h3">At a glance</h2>
     <ul class="facts">
-      <li><span>Work</span>Licensed real estate broker, founder of MJN Realty</li>
+      <li><span>Work</span>Licensed Real Estate Broker</li>
       <li><span>Focus</span>Seasonal and rental properties, property management</li>
       <li><span>Area</span>Lake George and Schroon Lake, Adirondack region of New York</li>
       <li><span>In the air</span>DJI drones, 4K photo and video</li>
@@ -171,8 +171,8 @@ VENTURES = """
     <img src="img/fall-road.jpg" alt="Fall foliage over a country road" loading="lazy">
     <div class="v-body">
       <p class="eyebrow">Real estate</p>
-      <h2>MJN Realty</h2>
-      <p>My brokerage. MJN Realty specializes in seasonal and rental properties and property management in the Adirondack region.</p>
+      <h2>mjnrealty.com</h2>
+      <p>My broker site. Matthew J. Nothdurft, Licensed Real Estate Broker, focusing on seasonal and rental properties and property management in the Adirondack region.</p>
       <a class="btn" href="https://mjnrealty.com" rel="noopener">Visit mjnrealty.com</a>
     </div>
   </article>
@@ -232,17 +232,17 @@ CONTACT = """
     </ul>
   </div>
   <div class="contact-side">
-    <h2 class="h3">Looking for MJN Realty?</h2>
-    <p>Rentals, property management, and real estate questions are best started on the MJN Realty site.</p>
+    <h2 class="h3">Looking for real estate help?</h2>
+    <p>Rentals, property management, and real estate questions are best started at mjnrealty.com.</p>
     <a class="btn" href="https://mjnrealty.com" rel="noopener">Go to mjnrealty.com</a>
   </div>
 </section>
 """
 
 PAGES = [
-    ("index.html", "Matthew Nothdurft", "Matthew Nothdurft, licensed real estate broker and founder of MJN Realty in the Adirondack region of New York.", HOME),
+    ("index.html", "Matthew Nothdurft", "Matthew J. Nothdurft, Licensed Real Estate Broker in the Adirondack region of New York.", HOME),
     ("about.html", "About | Matthew Nothdurft", "About Matthew Nothdurft.", ABOUT),
-    ("ventures.html", "Ventures | Matthew Nothdurft", "MJN Realty, The Hayes House, Adirondack Craftworks, and Drone Estates.", VENTURES),
+    ("ventures.html", "Ventures | Matthew Nothdurft", "mjnrealty.com, The Hayes House, Adirondack Craftworks, and Drone Estates.", VENTURES),
     ("contact.html", "Contact | Matthew Nothdurft", "Contact Matthew Nothdurft.", CONTACT),
 ]
 
