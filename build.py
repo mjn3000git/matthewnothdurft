@@ -67,7 +67,7 @@ HOME = f"""
     <div class="hero-copy">
       <p class="eyebrow">Lake George &middot; Schroon Lake &middot; the Adirondacks</p>
       <h1>Matthew Nothdurft</h1>
-      <p class="lede">Matthew J. Nothdurft, Licensed Real Estate Broker, working in the Adirondack region of New York.</p>
+      <p class="lede">Licensed Real Estate Broker, working in the Adirondack region of New York.</p>
       <p>I focus on seasonal and rental properties and property management around Lake George and Schroon Lake. Away from real estate, I fly DJI drones and make handmade pieces in wood, metal, and other materials through Adirondack Craftworks.</p>
       <div class="actions">
         <a class="btn" href="ventures.html">See what I'm working on</a>
