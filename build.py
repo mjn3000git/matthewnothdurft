@@ -235,7 +235,7 @@ CONTACT = """
       <p id="contact-form-note" class="form-note" role="status" hidden></p>
     </form>
     <ul class="facts">
-      <li><span>Phone</span><a href="tel:+15188329174">518-832-9174</a></li>
+      <li><span>Phone</span><a href="tel:+15188686689">518-868-6689</a></li>
       <li><span>Area</span>Adirondack region of New York</li>
     </ul>
   </div>
