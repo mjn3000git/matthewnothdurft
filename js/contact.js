@@ -16,7 +16,7 @@ const FORMSPREE_ID = "xaeeebnq";
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     if (note) {
-      note.textContent = "Thanks for writing. This form isn't connected yet, so your note wasn't sent. Please call 518-832-9174 for now.";
+      note.textContent = "Thanks for writing. This form isn't connected yet, so your note wasn't sent. Please call 518-868-6689 for now.";
       note.hidden = false;
     }
   });
