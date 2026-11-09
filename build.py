@@ -14,6 +14,7 @@ FOOTER_SITES = [
 
 def page(fname, title, desc, body):
     script = '<script src="js/contact.js" defer></script>\n' if fname == "contact.html" else ""
+    canonical = "https://matthewnothdurft.com/" if fname == "index.html" else f"https://matthewnothdurft.com/{fname}"
     nav = "".join(
         f'<a href="{h}"{" class=\"on\" aria-current=\"page\"" if h == fname else ""}>{t}</a>' for h, t in NAV
     )
@@ -27,6 +28,7 @@ def page(fname, title, desc, body):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+<link rel="canonical" href="{canonical}">
 <meta name="theme-color" content="#2f3d4c">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
